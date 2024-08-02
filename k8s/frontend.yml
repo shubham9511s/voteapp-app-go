@@ -25,9 +25,9 @@ spec:
       - name: frontend
         image: cloudacademydevops/frontend:v11
         imagePullPolicy: Always
-        # env:
-        #   - name: REACT_APP_APIHOSTPORT
-        #     value: $API_ELB_PUBLIC_FQDN #add your API_Load_Balancer DNS manually here if app does not run
+        env:
+          - name: REACT_APP_APIHOSTPORT
+            value: a70b0943b345f46c5802d308ddc96114-1079426844.ap-south-1.elb.amazonaws.com #add your API_Load_Balancer DNS manually here if app does not run
         ports:
         - containerPort: 8080
         livenessProbe:
