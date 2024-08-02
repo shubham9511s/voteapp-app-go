@@ -27,9 +27,9 @@ import (
 	"runtime"
 )
 
-const mongo_db = "langdb"
-const mongo_collection = "languages"
-const mongo_default_conn_str = "mongodb://mongo-0.mongo,mongo-1.mongo,mongo-2.mongo:27017/langdb"
+const mongo_db = "vote"
+const mongo_collection = "voter"
+const mongo_default_conn_str = "mongodb://admin:password@13.201.184.115:27017/vote?directConnection=true&appName=mongosh+2.2.12"
 const mongo_default_username = "admin"
 const mongo_default_password = "password"
 
